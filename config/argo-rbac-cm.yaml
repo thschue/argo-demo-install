@@ -4,6 +4,8 @@ metadata:
   name: argocd-rbac-cm
   namespace: argocd
 data:
+  accounts.keptn: apiKey
   policy.default: role:readonly
   policy.csv: |
     g, ca-on-ca:argo-admins, role:admin
+    g, keptn, role:admin
