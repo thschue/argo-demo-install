@@ -18,7 +18,7 @@ spec:
     server: https://34.134.64.60
   project: thschue
   source:
-    path: app
+    path: chart 
     repoURL: https://github.com/thschue/argo-demo-install
     targetRevision: HEAD
     helm:
