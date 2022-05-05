@@ -11,6 +11,7 @@ spec:
   source:
     chart: ingress-nginx 
     repoURL: https://kubernetes.github.io/ingress-nginx 
+    targetRevision: 4.1.0
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
