@@ -7,9 +7,10 @@ metadata:
     app.kubernetes.io/name: argocd-cm
     app.kubernetes.io/part-of: argocd
 data:
+  url: https://argo.research.dev.dynatracelabs.com
+
   dex.config: |
     connectors:
-      # GitHub example
       - type: github
         id: github
         name: GitHub
