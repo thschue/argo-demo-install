@@ -20,7 +20,11 @@ spec:
   source:
     chart: podtato-head
     repoURL: https://thschue.github.io/podtato-head
-    targetRevision: 0.1.1-dev-main.202205051847 
+    targetRevision: 0.1.1-dev-main.202205051857
+    helm:
+      parameters:
+      - name: hat.partNumber
+        value: "02"
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
