@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1alpha2
+kind: Certificate
+metadata:
+  name: argo-cd-cert
+spec:
+  secretName: argocd-secret
+  issuerRef:
+    name: argo-cd-issuer
+    kind: Issuer
+  commonName: argo.research.dev.dynatracelabs.com
+  dnsNames:
+  - argo.research.dev.dynatracelabs.com
