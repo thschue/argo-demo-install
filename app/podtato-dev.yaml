@@ -18,12 +18,12 @@ spec:
     server: https://34.134.64.60
   project: thschue
   source:
-    path: chart 
-    repoURL: https://github.com/thschue/argo-demo-install
+    path: delivery/chart/podtato 
+    repoURL: https://github.com/thschue/podtato-head
     targetRevision: HEAD
     helm:
       valueFiles:
-        - values-dev.yaml
+        - values.yaml
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
