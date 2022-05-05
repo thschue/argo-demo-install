@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: podtato-head-dev
+  namespace: argocd
+  annotations:
+    notifications.argoproj.io/subscribe.on-out-of-sync-status.keptn: ""
+    notifications.argoproj.io/subscribe.on-deployed.keptn: ""
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+  labels:
+    stage: dev
+    keptnService: podtatohead
+    keptnProject: demo
+spec:
+  destination:
+    namespace: "podtatohead-dev"
+    server: https://34.134.64.60
+  project: thschue
+  source:
+    path: app
+    repoURL: https://github.com/thschue/argo-demo-install
+    targetRevision: HEAD
+    helm:
+      valueFiles:
+        - values-dev.yaml
