@@ -24,3 +24,6 @@ spec:
     helm:
       valueFiles:
         - values-dev.yaml
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
