@@ -18,12 +18,8 @@ spec:
     server: https://34.134.64.60
   project: thschue
   source:
-    path: delivery/chart/podtato 
-    repoURL: https://github.com/thschue/podtato-head
-    targetRevision: HEAD
-    helm:
-      valueFiles:
-        - values.yaml
+    chart: podtato-head
+    repoURL: https://thschue.github.io/podtato-head
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
