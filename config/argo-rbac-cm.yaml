@@ -6,4 +6,4 @@ metadata:
 data:
   policy.default: role:readonly
   policy.csv: |
-    g, ca-on-ca:argo-admins, role:org-admin
+    g, ca-on-ca:argo-admins, role:admin
