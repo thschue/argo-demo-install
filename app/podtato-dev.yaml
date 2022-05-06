@@ -24,7 +24,7 @@ spec:
     helm:
       parameters:
       - name: hat.partNumber
-        value: "01"
+        value: "03"
       - name: leftArm.partNumber
         value: "02"
   syncPolicy:
