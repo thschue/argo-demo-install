@@ -7,6 +7,7 @@ metadata:
     notifications.argoproj.io/subscribe.on-out-of-sync-status.keptn: ""
     notifications.argoproj.io/subscribe.on-deployed.keptn: ""
     link.argocd.argoproj.io/external-link: http://35.239.155.8
+    externalURI: http://35.239.155.8
   finalizers:
   - resources-finalizer.argocd.argoproj.io
   labels:
