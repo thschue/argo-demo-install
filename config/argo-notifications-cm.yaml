@@ -21,8 +21,13 @@ data:
               "configurationChange": {},
               "labels": {
                 "version": "{{.app.status.sync.revision}}",
-                "servicename": "{{.app.metadata.name}}",
-                "repository": "{{.app.spec.source.repoURL}}"
+                "appname": "{{.app.metadata.name}}",
+                "argocd": "https://argo.research.dev.dynatracelabs.com/applications/{{.app.metadata.name}}"
+              },
+	     "deployment": {
+               "deploymentURIsPublic": [
+                  "{{.app.metadata.labels.publicURI}}"
+               ]
               },
               "project": "{{.app.metadata.labels.keptnProject}}",
               "service": "{{.app.metadata.labels.keptnService}}",
@@ -43,7 +48,7 @@ data:
               "configurationChange": {},
               "labels": {
                 "version": "{{.app.status.sync.revision}}",
-                "servicename": "{{.app.metadata.name}}"
+                "appname": "{{.app.metadata.name}}"
               },
               "project": "{{.app.metadata.labels.keptnProject}}",
               "service": "{{.app.metadata.labels.keptnService}}",
