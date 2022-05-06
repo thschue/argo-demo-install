@@ -26,7 +26,7 @@ spec:
       - name: hat.partNumber
         value: "01"
       - name: leftArm.partNumber
-        value: "05"
+        value: "02"
   syncPolicy:
     syncOptions:
     - CreateNamespace=true

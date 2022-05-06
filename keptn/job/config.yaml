@@ -9,4 +9,4 @@ actions:
           - /k6
         image: "loadimpact/k6"
         cmd: ["k6"]
-        args: ["run", "-e", "SERVICE=$(KEPTN_SERVICE)", "-e", "STAGE=$(KEPTN_STAGE)", "--duration", "150s", "--vus", "60", "/keptn/k6/test.js"]
+        args: ["run", "-e", "SERVICE=$(KEPTN_SERVICE)", "-e", "STAGE=$(KEPTN_STAGE)", "--duration", "30s", "--vus", "60", "/keptn/k6/test.js"]
