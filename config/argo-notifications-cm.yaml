@@ -5,10 +5,10 @@ metadata:
   namespace: argocd
 data:
   service.webhook.keptn: |
-    url: https://${keptn-api-hostname}/api/v1/event
+    url: https://$keptn-api-hostname/api/v1/event
     headers: #optional headers
     - name: x-token
-      value: ${keptn-api-token}
+      value: $keptn-api-token
     - name: Content-Type
       value: application/json
   template.keptn-outofsync: |
