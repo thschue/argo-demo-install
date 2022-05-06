@@ -22,7 +22,7 @@ spec:
   source:
     chart: podtato-head
     repoURL: https://thschue.github.io/podtato-head
-    targetRevision: 0.1.1-dev-main.202205060721 
+    targetRevision: 0.1.1-dev-main.202205060959 
     helm:
       parameters:
       - name: keptn.project
