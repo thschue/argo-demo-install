@@ -43,8 +43,9 @@ data:
               "configurationChange": {},
               "labels": {
                 "version": "{{.app.status.sync.revision}}",
-                "appname": "{{.app.metadata.name}}"
-                "link": "{{.app.metadata.annotations.externalURI}}"
+                "appname": "{{.app.metadata.name}}",
+                "link": "{{.app.metadata.annotations.externalURI}}",
+                "argocd": "https://argo.research.dev.dynatracelabs.com/applications/{{.app.metadata.name}}"
               },
               "deployment": {
                   "deploymentURIsPublic": [
