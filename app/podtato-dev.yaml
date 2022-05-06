@@ -12,6 +12,7 @@ metadata:
     stage: dev
     keptnService: podtatohead
     keptnProject: demo
+    publicURI: http://35.239.155.8
 spec:
   destination:
     namespace: "podtatohead-dev"
