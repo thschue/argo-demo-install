@@ -26,9 +26,9 @@ spec:
       - name: keptn.project
         value: "podtatohead"
       - name: keptn.stage
-        name: "dev"
+        value: "dev"
       - name: hat.partNumber
-        value: "03"
+        value: "05"
       - name: leftArm.partNumber
         value: "04"
   syncPolicy:
