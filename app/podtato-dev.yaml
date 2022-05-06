@@ -20,9 +20,13 @@ spec:
   source:
     chart: podtato-head
     repoURL: https://thschue.github.io/podtato-head
-    targetRevision: 0.1.1-dev-main.202205051903 
+    targetRevision: 0.1.1-dev-main.202205060721 
     helm:
       parameters:
+      - name: keptn.project
+        value: "podtatohead"
+      - name: keptn.stage
+        name: "dev"
       - name: hat.partNumber
         value: "03"
       - name: leftArm.partNumber
