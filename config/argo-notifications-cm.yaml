@@ -24,8 +24,8 @@ data:
                 "appname": "{{.app.metadata.name}}",
                 "argocd": "https://argo.research.dev.dynatracelabs.com/applications/{{.app.metadata.name}}"
               },
-	     "deployment": {
-               "deploymentURIsPublic": [
+              "deployment": {
+                  "deploymentURIsPublic": [
                   "{{.app.metadata.labels.publicURI}}"
                ]
               },
