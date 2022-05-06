@@ -1,0 +1,12 @@
+apiVersion: v2
+actions:
+  - name: "k6-smoke"
+    events:
+      - name: "sh.keptn.event.test.triggered"
+    tasks:
+      - name: "k6"
+        files:
+          - /k6
+        image: "loadimpact/k6"
+        cmd: ["k6"]
+        args: ["run", "-e", "SERVICE=$(KEPTN_SERVICE)", "-e", "STAGE=$(KEPTN_STAGE)", "--duration", "150s", "--vus", "60", "/keptn/k6/test.js"]
