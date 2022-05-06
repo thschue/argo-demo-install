@@ -47,7 +47,7 @@ data:
               },
               "deployment": {
                   "deploymentURIsPublic": [
-                     "{{.app.metadata.annotations.\"link.argocd.argoproj.io/external-link\"}}"
+                     "{{.app.metadata.annotations.externalURI}}"
                ]
               },
               "project": "{{.app.metadata.labels.keptnProject}}",
