@@ -13,7 +13,7 @@ metadata:
   labels:
     stage: dev
     keptnService: podtatohead
-    keptnProject: demo
+    keptnProject: argo-demo
 spec:
   destination:
     namespace: "podtatohead-dev"
