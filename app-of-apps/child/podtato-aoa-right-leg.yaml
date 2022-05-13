@@ -1,38 +1,33 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: podtato-head-dev
+  name: podtato-head-right-leg
   namespace: argocd
   annotations:
     notifications.argoproj.io/subscribe.on-out-of-sync-status.keptn: ""
     notifications.argoproj.io/subscribe.on-deployed.keptn: ""
-    link.argocd.argoproj.io/external-link: http://35.239.155.8
-    externalURI: https://35.238.94.158
+    externalURI: http://35.239.155.8
   finalizers:
   - resources-finalizer.argocd.argoproj.io
   labels:
     stage: dev
-    keptnService: podtatohead
-    keptnProject: demo
+    keptnService: podtatohead-aoa-right-leg
+    keptnProject: argo-appofapps
 spec:
   destination:
-    namespace: "podtatohead-dev"
-    server: https://35.238.94.158
+    namespace: "podtatohead-aoa-dev"
+    server: https://34.134.64.60
   project: thschue
   source:
-    chart: podtato-head
+    chart: podtato-right-leg
     repoURL: https://thschue.github.io/podtato-head
     targetRevision: 0.2.0
     helm:
       parameters:
       - name: keptn.project
-        value: "podtatohead"
+        value: "podtatohead-aoa"
       - name: keptn.stage
         value: "dev"
-      - name: hat.partNumber
-        value: "02"
-      - name: leftArm.partNumber
-        value: "03"
   syncPolicy:
     syncOptions:
     - CreateNamespace=true

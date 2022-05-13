@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: podtato-head-appofapps
+  namespace: argocd
+  annotations:
+    notifications.argoproj.io/subscribe.on-out-of-sync-status.keptn: ""
+    notifications.argoproj.io/subscribe.on-deployed.keptn: ""
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+  labels:
+    stage: dev
+    keptnService: podtatohead-appofapps
+    keptnProject: argo-appofapps
+spec:
+  destination:
+    namespace: "*"
+    server: https://kubernetes.default.svc
+  project: thschue
+  source:
+    path: app-of-apps/child
+    repoURL: https://thschue.github.io/podtato-head
+    targetRevision: HEAD

@@ -12,7 +12,7 @@ metadata:
 spec:
   destination:
     namespace: "podtatohead-hardening"
-    server: https://34.134.64.60
+    server: https://35.238.94.158
   project: thschue
   source:
     path: chart 
