@@ -6,7 +6,7 @@ metadata:
   annotations:
     notifications.argoproj.io/subscribe.on-out-of-sync-status.keptn: ""
     notifications.argoproj.io/subscribe.on-deployed.keptn: ""
-    link.argocd.argoproj.io/external-link: http://35.239.155.8
+    link.argocd.argoproj.io/external-link: https://demo.research.dev.dynatracelabs.com/bridge/project/argo-demo
     externalURI: https://35.238.94.158
   finalizers:
   - resources-finalizer.argocd.argoproj.io
