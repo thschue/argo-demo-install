@@ -32,7 +32,7 @@ data:
             },
             "source": "argocd",
             "specversion": "1.0",
-            "type": "sh.keptn.event.dev.kickoff.triggered",
+            "type": "sh.keptn.event.dev.pre-deploy.triggered",
             "shkeptnspecversion": "0.2.3"
           }
   template.keptn-deployed: |
