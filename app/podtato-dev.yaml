@@ -7,7 +7,7 @@ metadata:
     notifications.argoproj.io/subscribe.on-out-of-sync-status.keptn: ""
     notifications.argoproj.io/subscribe.on-deployed.keptn: ""
     link.argocd.argoproj.io/external-link: https://demo.research.dev.dynatracelabs.com/bridge/project/argo-demo/sequence
-    externalURI: https://35.238.94.158
+    externalURI: https://35.188.108.82
   finalizers:
   - resources-finalizer.argocd.argoproj.io
   labels:
@@ -22,7 +22,7 @@ spec:
   source:
     chart: podtato-head
     repoURL: https://thschue.github.io/podtato-head
-    targetRevision: 0.2.0
+    targetRevision: 0.1.1-dev-main.202205061006
     helm:
       parameters:
       - name: keptn.project
