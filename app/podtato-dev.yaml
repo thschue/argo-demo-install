@@ -30,7 +30,7 @@ spec:
       - name: keptn.stage
         value: "dev"
       - name: hat.partNumber
-        value: "02"
+        value: "03"
       - name: leftArm.partNumber
         value: "01"
   syncPolicy:
